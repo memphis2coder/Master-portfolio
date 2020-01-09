@@ -1,0 +1,30 @@
+@import "./style.css";
+
+/* Footer styles */
+.footer-content {
+  height: 200px;
+  text-align: center;
+}
+
+.footer-content .btn {
+  background: var(--light-blue-color);
+  color: white;
+  opacity: 0.8;
+  margin-top: 3rem;
+  outline: none;
+  border: none;
+  letter-spacing: 1px;
+}
+.footer-content .btn:hover {
+  opacity: 1;
+}
+.footer-content hr {
+  border: none;
+  height: 20px;
+  width: 50%;
+  height: 50px;
+  margin-top: 0;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px var(--light-blue-color);
+  margin: -50px auto 10px;
+}

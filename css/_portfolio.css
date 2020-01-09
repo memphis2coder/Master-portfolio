@@ -1,0 +1,135 @@
+@import "./style.css";
+
+/* Portfolio */
+#portfolio {
+  padding-top: 15%;
+  min-height: 100vh;
+  background: white;
+  position: relative;
+}
+/* style for slanted background */
+#portfolio:before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 125px;
+  top: -50px;
+  left: 0;
+  background: white;
+  transform: skewy(10deg);
+  -webkit-transform: skewy(10deg);
+  -moz-transform: skewy(10deg);
+  -ms-transform: skewy(10deg);
+  -o-transform: skewy(10deg);
+}
+/* style for slanted background */
+#portfolio:after {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 125px;
+  top: -50px;
+  right: 0;
+  background: white;
+  transform: skewy(-10deg);
+  -webkit-transform: skewy(-10deg);
+  -moz-transform: skewy(-10deg);
+  -ms-transform: skewy(-10deg);
+  -o-transform: skewy(-10deg);
+}
+
+.portfolio-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 80px;
+}
+/* responsive break points */
+@media only screen and (min-width: 700px) {
+  .portfolio-title {
+    margin-bottom: 100px;
+    margin-top: -100px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 50px;
+  padding: 0 10px;
+}
+/* responsive break points */
+@media only screen and (min-width: 600px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 50px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.portfolio-cards {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border: 2px solid var(--light-blue-color);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.portfolio-cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-cards img {
+  width: 100%;
+}
+
+.portfolio-cards-content {
+  padding: 20px 0;
+}
+.portfolio-cards-content h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
+.portfolio-cards-content p {
+  font-size: 0.8rem;
+  padding-bottom: 0.2rem;
+  opacity: 0.7;
+}
+
+#portfolio .btn {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+}
+@media only screen and (min-width: 900px) {
+  .portfolio-cards-content h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+  }
+  .portfolio-cards-content p {
+    font-size: 1rem;
+  }
+  #portfolio .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+.btn-github:hover {
+  background-color: #b691dc;
+}

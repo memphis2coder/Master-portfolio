@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,900|Roboto:400,700,900&display=swap");
+@import "./_hero.css";
+@import "./_front-end.css";
+@import "./_portfolio.css";
+@import "./_footer.css";
+
+:root {
+  --primary-text-color: #212121;
+  --divider-color: #f4f4f489;
+  --btn-color: #bdbdbd;
+  --light-blue-color: lightblue;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-text-color);
+  scroll-behavior: smooth;
+}
+
+a {
+  color: var(--logo-color);
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 1rem;
+  background: none;
+  margin-top: 20px;
+  padding: 10px 30px;
+  outline: none;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.section-padding {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+/* responsive break points */
+@media only screen and (min-width: 900px) {
+  .section-title {
+    font-size: 1.8rem;
+  }
+}
+
+.section-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+/* responsive break points */
+@media only screen and (min-width: 900px) {
+  .section-text {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,67 @@
+@import "./style.css";
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.hero-text h1 {
+  font-size: 2.3rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+/* responsive break points */
+@media only screen and (min-width: 900px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+}
+
+.hero-text p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+/* responsive break points */
+@media only screen and (min-width: 900px) {
+  .hero-text p {
+    font-size: 1.3rem;
+  }
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--light-blue-color);
+  color: white;
+  transition: all ease-in-out 0.7s;
+  -webkit-transition: all ease-in-out 0.7s;
+  -moz-transition: all ease-in-out 0.7s;
+  -ms-transition: all ease-in-out 0.7s;
+  -o-transition: all ease-in-out 0.7s;
+}
+
+.btn-hero {
+  font-size: 0.8rem;
+  border: 2px solid black;
+  border-radius: 0px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+}
+/* responsive break points */
+@media only screen and (min-width: 900px) {
+  .btn-hero {
+    font-size: 1rem;
+  }
+}
+
+.btn-hero:hover {
+  background: var(--light-blue-color);
+  border: 2px solid var(--light-blue-color);
+}
